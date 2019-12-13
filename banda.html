@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contacto - Die Toten Hosen</title>
+	<title>Banda - Die Toten Hosen</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
-<body class="bodycontacto">
-<div class="container container-contacto">
+<body>
+<div class="container">
 	<header>
 		<nav class="nav"><ul class="menu-items">
 			<li class="menu-item"><a href="tour.html">Tour</a></li>
@@ -28,32 +28,52 @@
 		</div>
 	</header>
 </div>
+	<br>
 <div>
-	<main class="contactform">
-		<form action="/action_page.php">
-  <fieldset>
-    <legend><strong>Escribinos!</strong></legend>
-    Nombre:<br>
-    <input type="text" name="firstname" value="Tu nombre completo"><br><br>
-    Email:<br>
-    <input type="email" name="email"><br><br>
-    <label for="talles">Género:</label>
-<select name="talles">
-	<option value="Hombre">Hombre</option>
-	<option value="Mujer">Mujer</option>
-	<option value="Otro">Otro</option>
-</select><br><br>
-    Querés subscribirte a nuestro newsletter?<br>
-  <input type="radio" name="newsletter" value="si" checked> Si<br>
-  <input type="radio" name="newsletter" value="no"> No<br><br>
-</form>
-    Tu mensaje:<br>
-    <textarea name="message" rows="10" cols="30">
-	Escribí acá tu mensaje!
-	</textarea><br>
-    <input type="submit" value="Enviar">
-  </fieldset>
-</form>
+	<main>
+		<article id="historia1">
+		<h1><strong>Historia</strong></h1>
+		<p>
+			Die Toten Hosen es una banda de punk rock formada en Düsseldorf (Alemania) y en actividad desde 1982. En la actualidad está compuesta por los músicos Andreas Frege, Andreas Meurer, Michael Breitkopf, Andreas von Holst y el inglés Stephen George Ritchie.</p>
+		<p>
+		Si bien se suele creer que Die Toten Hosen significa Los Pantalones Muertos en alemán, lo cierto es que su nombre se refiere a una expresión de la lengua germánica: "Hier ist tote Hose". Se utiliza para describir lugares aburridos en los que no ocurre nada. De esta forma, "Am Abend ist in Freiburg tote Hose" (Friburgo es aburrida de noche) literalmente se traduciría como En Friburgo hay pantalón muerto.</p>
+		<p>			La mayor parte de sus canciones tienen letras en alemán y son el grupo de punk rock de más éxito de su país junto a Die Ärzte. Han publicado 14 álbumes de estudio y 55 sencillos. Solo en Alemania han vendido más de 23 millones de copias.
+		</p></article><br>
+		<article id="historia2">
+			<h1>Argentina</h1>
+			<p>
+				El tema de difusión y que da nombre al disco Auswärtsspiel (Juego de visitante) fue dedicado a sus fans en la Argentina, país que no dudaron en visitar en la gira de presentación del dicho álbum pese a encontrarse éste en una importante crisis económica.
+			</p>
+			<p>
+				En abril de 2009, los Toten Hosen publicaron un disco para el mercado argentino bajo el título de La hermandad – En el principio fue el ruido, que incluía la mayor parte de los temas de In aller Stille y Zurück zum Glück, más tres nuevos. Uno de ellos se trata de una versión de Uno, dos, ultraviolento, de la banda argentina Los Violadores. Simultáneamente, la banda hizo públicas en Buenos Aires las fechas de la segunda parte de su gira. El 2 de mayo de 2009 actuaron por primera vez en su historia en Moscú.
+			</p>
+			<p>
+				Desde noviembre, están de gira por Latinoamérica. A principios del 2010 regresan a la Argentina para 2 shows uno en Buenos Aires en el Auditorio Sur de Temperley y otro en Córdoba tocando por primera vez en el festival Cosquin Rock
+			</p>
+							<iframe frameborder="0" width="480" height="270" src="https://www.dailymotion.com/embed/video/x5esc3j" allowfullscreen allow="autoplay"></iframe>
+		</article>
+							<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 	</main>
 </div>
 
@@ -115,7 +135,7 @@
 	<td></td>
 	<td></td>
 	<td></td>
-	<caption>Die Toten Hosen - Todos los derechos reservados <br> Página realizada por Oska</caption>
+	<caption class="captionfooter">Die Toten Hosen - Todos los derechos reservados <br> Página realizada por Oska</caption>
 </tr>	
 </table></div>
 		</footer>

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contacto - Die Toten Hosen</title>
+	<title>Tour - Die Toten Hosen</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
-<body class="bodycontacto">
-<div class="container container-contacto">
+<body>
+	<div class="container">
 	<header>
 		<nav class="nav"><ul class="menu-items">
 			<li class="menu-item"><a href="tour.html">Tour</a></li>
 			<li class="menu-item"><a href="banda.html">Banda</a>
 				<ul class="band-list">
-					<li class="band-list-item"><a href="#historia1">Historia</li>
-					<li class="band-list-item"><a href="#historia2">Argentina</li>
+					<li class="band-list-item"><a href="banda.html#historia1">Historia</li>
+					<li class="band-list-item"><a href="banda.html#historia2">Argentina</li>
 				</ul>
 			</li>
 			<li class="menu-item"><a href="discografia.html">Discografía</a></li>
@@ -28,36 +28,48 @@
 		</div>
 	</header>
 </div>
+	<main>
+	<label for="calendario"><h2>Calendario</h2></label>
+	<table class="colorfechas" name="calendario">
+		<tr>
+			<td><strong>6/10/20</strong> mié</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>Kempten - DE - BigBox</td>
+		</tr>
+		<tr>
+			<td><strong>6/12/20</strong> vie</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>Stuttgart - DE - Schleyer-Halle</td>
+		</tr>
+		<tr>
+			<td><strong>6/13/20</strong> sáb</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>Stuttgart - DE - Schleyer-Halle Zusatzkonzert</td>
+		</tr>
+		<tr>
+			<td><strong>6/16/20</strong> mar</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>Dortmund - DE - Westfallenhale</td>
+		</tr>
+		<tr>
+			<td><strong>6/17/20</strong> mier</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>Dortmund - DE - Westfallenhale</td>
+		</tr>
+	</table>
+</main>
+<br>
 <div>
-	<main class="contactform">
-		<form action="/action_page.php">
-  <fieldset>
-    <legend><strong>Escribinos!</strong></legend>
-    Nombre:<br>
-    <input type="text" name="firstname" value="Tu nombre completo"><br><br>
-    Email:<br>
-    <input type="email" name="email"><br><br>
-    <label for="talles">Género:</label>
-<select name="talles">
-	<option value="Hombre">Hombre</option>
-	<option value="Mujer">Mujer</option>
-	<option value="Otro">Otro</option>
-</select><br><br>
-    Querés subscribirte a nuestro newsletter?<br>
-  <input type="radio" name="newsletter" value="si" checked> Si<br>
-  <input type="radio" name="newsletter" value="no"> No<br><br>
-</form>
-    Tu mensaje:<br>
-    <textarea name="message" rows="10" cols="30">
-	Escribí acá tu mensaje!
-	</textarea><br>
-    <input type="submit" value="Enviar">
-  </fieldset>
-</form>
-	</main>
-</div>
-
-	<div>
 			<footer>
 			<div><table>
 		<tr>
@@ -115,10 +127,11 @@
 	<td></td>
 	<td></td>
 	<td></td>
-	<caption>Die Toten Hosen - Todos los derechos reservados <br> Página realizada por Oska</caption>
+	<caption class="captionfooter">Die Toten Hosen - Todos los derechos reservados <br> Página realizada por Oska</caption>
 </tr>	
 </table></div>
 		</footer>
 	</div>
+
 </body>
 </html>
